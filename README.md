@@ -5,39 +5,34 @@ Conda environment
 
 First, create a Conda environment with the required dependencies:
 
-sh
-
-conda env create -f environment.yml
+    conda env create -f environment.yml
 
 Installing the environment
 
 Next, activate the environment:
 
-sh
-
-conda activate safeRL
+    conda activate safeRL
 
 Running the environment
 
 To run the environment with DDPG+HER+DecisionTree controller:
 
-sh
 
-python DDPG_Reach.py
+
+    python DDPG_Reach.py
 
 To run the environment with PID controller:
 
-sh
 
-python PID_Reach.py
+
+    python PID_Reach.py
 
 Results
 
 After running the scripts, the results will be saved in the logs directory. The Tensorboard files can be visualized with:
 
-sh
 
-tensorboard --logdir=logs
+    tensorboard --logdir=logs
 
 DDPG+HER+DecisionTree controller
 
@@ -52,6 +47,6 @@ Comparing the performance of DDPG+HER+DecisionTree and PID controllers can be do
 Based on the comparison, we can draw conclusions about the effectiveness of the two controllers for the Panda Reach v2 environment.
 Acknowledgements
 
-    OpenAI for providing the Panda Reach v2 environment
-    Stable Baselines 3 for the DDPG implementation
+OpenAI for providing the Panda Reach v2 environment
+Stable Baselines 3 for the DDPG implementation
 
