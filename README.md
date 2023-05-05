@@ -1,7 +1,7 @@
 # DDPG-Her-DecisionTree-vs.-PID
 This repository contains the code to compare two control approaches for the Panda Reach v2 environment provided by OpenAI Gym: Deep Deterministic Policy Gradients with Hindsight Experience Replay and Decision Tree regression (DDPG+HER+DecisionTree), and Proportional-Integral-Derivative (PID) controller.
 
-##Environment setup
+## Environment setup
 Conda environment
 
 First, create a Conda environment with the required dependencies:
@@ -28,14 +28,14 @@ To run the environment with PID controller:
 
     python PID_Reach.py
 
-##Results
+## Results
 
 After running the scripts, the results will be saved in the logs directory. The Tensorboard files can be visualized with:
 
 
     tensorboard --logdir=logs
 
-##DDPG+HER+DecisionTree controller
+## DDPG+HER+DecisionTree controller
 
 After training, the DDPG+HER+DecisionTree controller will be saved in the models/DDPG_Reach directory.
 PID controller
@@ -47,7 +47,7 @@ Comparing the performance of DDPG+HER+DecisionTree and PID controllers can be do
 
 Based on the comparison, we can draw conclusions about the effectiveness of the two controllers for the Panda Reach v2 environment.
 
-##Acknowledgements
+## Acknowledgements
 
 OpenAI for providing the Panda Reach v2 environment
 
